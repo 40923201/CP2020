@@ -1,0 +1,279 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923201 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923201 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='First.html'>First</a><li class='has-children'><a href='hw1.html'>hw1</a><ul class='dropdown'><li><a href='Unit1 Succeeding in PC Hardware.html'>Unit1 Succeeding in PC Hardware</a><li><a href='Uint2 Hardware Basics.html'>Uint2 Hardware Basics</a></li></ul><li><a href='hw2.html'>hw2</a><li class='has-children'><a href='hw3.html'>hw3</a><ul class='dropdown'><li><a href='01Character Input.html'>01Character Input</a><li><a href='04 Divisors.html'>04 Divisors</a><li><a href='30 Pick Word.html'>30 Pick Word</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">04 Divisors << <a href='04 Divisors.html'>Previous</a> <br /><h1>30 Pick Word</h1>
+<p><span>Exercise 30 (and Solution)</span></p>
+<p><span>This exercise is Part 1 of 3 of the Hangman exercise series. The other exercises are: Part 2 and Part 3.</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">本練習是《 Hangman》練習系列3的第1部分。其他練習是：第2部分和第3部分。<br/></span></pre>
+<p><span>In this exercise, the task is to write a function that picks a random word from a list of words from the SOWPODS dictionary. Download this file and save it in the same directory as your Python code. This file is Peter Norvig’s compilation of the dictionary of words used in professional Scrabble tournaments. Each line in the file contains a single word.</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">在本練習中，任務是編寫一個函數，該函數從SOWPODS詞典的單詞列表中選擇一個隨機單詞。下載此文件<br/>並將其保存在與Python代碼相同的目錄中。此文件是Peter Norvig對專業Scrabble錦標賽中使用的單詞<br/>詞典的彙編。文件中的每一行都包含一個單詞。</span></pre>
+<p><span>Hint: use the Python random library for picking a random word.</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">提示：使用Python隨機庫選擇一個隨機詞。<br/></span></pre>
+<p><span>Aside: what is SOWPODS</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">什麼是SOWPODS<br/></span></pre>
+<p><span>SOWPODS is a word list commonly used in word puzzles and games (like Scrabble for example). It is the combination of the Scrabble Player’s Dictionary and the Chamber’s Dictionary. (The history of SOWPODS is quite interesting, I highly recommend reading the Wikipedia article if you are curious.)</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">SOWPODS是單詞拼圖和遊戲中常用的單詞列表（例如，Scrabble）。它是Scrabble Player詞典和Chamber<br/>詞典的組合。 （SOWPODS的歷史非常有趣，如果您感到好奇，我強烈建議閱讀Wikipedia文章。）<br/></span></pre>
+<p><span>Previous exercises with similar concepts</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">以前的類似概念練習<br/></span></pre>
+<p><span></span></p>
+<p><span>In previous exercises, we have covered all the necessary skills needed to complete this exercise. Check out:</span></p>
+<p><span> </span></p>
+<p><span>1.Exercise 22: read from a file </span></p>
+<p><span>2.Exercise 9: generating a random number   </span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">3.Exercise 3: accessing an element of a list <br/><span>在以前的練習中，我們介紹了完成此練習所需的所有必要技能。查看： <br/>1.練習22：讀取文件 <br/>2.練習9：生成一個隨機數 <br/>3.練習3：訪問列表的元素<br/></span></span></pre>
+<p><span>Brief concept review</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">簡要概念回顧<br/></span></pre>
+<p><span>Reading a file</span></p>
+<p><span>讀取文件</span></p>
+<p><span>The Python way of reading a file from disk is to use the with construction together with a while loop:</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">從磁盤讀取文件的Python方法是將with結構與while循環一起使用：<br/></span></pre>
+<p><span>with open('filename.txt', 'r') as f:</span></p>
+<p><span>  line = f.readline()</span></p>
+<p><span>  while line:</span></p>
+<p><span>    # do something to the line, for example</span></p>
+<p><span>    # saving it to disk</span></p>
+<p><span>    line = f.readline()</span></p>
+<p><span> </span></p>
+<p><span>print("The entire file as been read!")</span></p>
+<p>The file filename.txt should be in the same directory as your Python script.</p>
+<p><span>文件filename.txt應與Python腳本位於同一目錄中</span></p>
+<p>The idea behind the with construction is that it isolates any variables defined in the with line from the rest of your code. When you are dealing with files, this means properly opening and closing the files. The open line in the with statement actually does the opening of the file and saves the file object in the variable f. The 'r' passed into the open() function tells Python “open the file for reading”. If the 'w' argument is passed instead, Python will interpret this as “open the file and allow writing to it.”</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">with構造背後的想法是，它將with行中定義的所有變量與其餘代碼隔離開來。在處理文件時，這意味著正確<br/>打開和關閉文件。 with語句中的打開行實際上是在打開文件並將文件對象保存在變量f中。傳遞給open（）<br/>函數的'r'告訴Python“打開文件進行讀取”。如果改為傳遞“ w”參數，Python會將其解釋為“打開文件並允<br/>許對其進行寫入”。</span></pre>
+<p>After all the code inside the with block is finished, the file f is properly closed by Python. So by the time the program starts executing the print statement, the file is already closed.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">在with塊中的所有代碼完成之後，文件f被Python正確關閉。因此，當程序開始執行print語句時，<br/>該文件已經關閉。</span></pre>
+<p>One thing to remember when reading lines from a file in this way is that a line contains a \n, or a newline character at the end. So before processing the line, it is usually a good idea to use .strip() to remove the newlines and spaces from the start and end of the lines, like so:</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">以這種方式從文件中讀取行時要記住的一件事是，行的末尾包含\ n或換行符。因此，在處理行之前，通常<br/>最好使用.strip（）從行的開頭和結尾刪除換行符和空格，如下所示：</span></pre>
+<p>with open('filename.txt', 'r') as f:</p>
+<p>  line = f.readline().strip()</p>
+<p>  while line:</p>
+<p>    # do something with the 'line' variable</p>
+<p>    line = f.readline().strip()</p>
+<p>There are many ways of reading lines from files. If for example you want to read all the lines of the file into a list, you can use the following variant:</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">有許多方法可以從文件中讀取行。例如，如果要將文件的所有行都讀入列表，則可以使用以下變體：<br/></span></pre>
+<p>with open('filename.txt', 'r') as f:</p>
+<p>  lines = f.readlines()</p>
+<p>At the end of this code, the variable lines will have all the elements from the file in a Python list.</p>
+<p>Here are a few references about opening files, if you would like to read more:</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">在此代碼的結尾，變量行將在Python列表中包含文件中的所有元素。
+
+如果您想了解更多信息，這裡有一些有關打開文件的參考：<br/></span></pre>
+<p>．Learn Python the Hard Way page about reading files</p>
+<p>．The Python 3.5 documentation about reading and writing files</p>
+<p><span>在關於閱讀文件的困難方式頁面上學習Python </span></p>
+<p><span>有關讀取和寫入文件的Python 3.5文檔</span></p>
+<p></p>
+<p>Generating a random number</p>
+<p><span>產生一個隨機數</span></p>
+<p>Python’s random library is used to do operations with random numbers. For a list of the full methods available in the random library, check the Python 3 documentation of the random library.</p>
+<p>The two methods that might be useful for this exercise are random.choice() or random.randint(). The documentation is easy to read, so check out the docs for how these methods work!</p>
+<div class="pcCUmf vCOSGb" data-fpen="1" id="tw-plp">
+<div class="hhB0V">
+<div class="j1iyq hide-focus-ring" data-dslc="" data-dsln="" data-lang="en" data-uiln="中文（簡體）" data-ved="2ahUKEwik3aSM4cztAhUvGKYKHb_pCKAQ8TQwAHoECAIQAw" id="tw-sl" jsaction="icVbh" role="button" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">Python的隨機庫用於對隨機數進行運算。有關隨機庫中可用的完整方法的列表，請查看隨機庫的Python 3<br/>文檔。
+
+對於本練習可能有用的兩個方法是random.choice（）或random.randint（）。該文檔易於閱讀，因此請<br/>查看文檔以了解這些方法的工作方式！</span></pre>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<p><span><em> </em></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<p><span></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<p></p>
+<p>&gt;&gt;&gt;&gt;&gt;&gt;&gt; 441673fc37d519665903229a4938dd860e65757e</p><br />04 Divisors << <a href='04 Divisors.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

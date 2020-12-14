@@ -133,8 +133,72 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='hw1.html'>Next</a> >> hw1<br /><h1>First</h1>
-<br /> <a href='hw1.html'>Next</a> >> hw1</div>
+    <div id="tipue_search_content">hw3 << <a href='hw3.html'>Previous</a> <a href='04 Divisors.html'>Next</a> >> 04 Divisors<br /><h1>01Character Input</h1>
+<p><span>input strings types int</span></p>
+<p><span>Calibrating the exercises to the audience is going to be a challenging task, so I ask you to bear with me if the exercises are too easy or too hard. Every week there will be a poll you can click on to discuss whether the exercise is too easy or too hard and hopefully in a few weeks, I’ll get the level right. Let’s get to it! I will start with the exercise and include a discussion later, in case you want the extra challenge.</span></p>
+<p><span>向觀眾校準練習將是一項艱鉅的任務，因此，我請您忍受練習是否太容易或太難。每週都會進行一次民意測驗，您可以單擊以討論該練習是太容易還是太難，希望在幾週後，我會把水平調到正確的水平。讓我們開始吧！如果您需要額外的挑戰，我將從練習開始，並在以後進行討論。</span></p>
+<p><span>Exercise 1 (and Solution)</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">練習1（和解決方案）<br/></span></pre>
+<p><span>Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old.</span></p>
+<p><span>創建一個程序，要求用戶輸入他們的姓名和年齡。打印給他們的消息，告訴他們他們將滿100歲的年份。</span></p>
+<p><span>Extras:</span></p>
+<p><span>附加功能：</span></p>
+<p><span>1.Add on to the previous program by asking the user for another number and printing out that many copies of the previous message. (Hint: order of operations exists in Python)</span></p>
+<p><span>通過詢問用戶另一個號碼並打印出先前消息的許多副本來添加到先前的程序中。 （提示：Python中存在操作順序）</span></p>
+<p><span>2.</span><span>Print out that many copies of the previous message on separate lines. (Hint: the string "\n is the same as pressing the ENTER button</span></p>
+<p><span>在單獨的行上打印出先前消息的許多副本。 （提示：字符串“ \ n與按ENTER按鈕相同</span></p>
+<p><span>Discussion</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">討論區</span></pre>
+<p><span>Concepts for this week</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">本週的概念<br/></span></pre>
+<p>．<span>Getting user input</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">獲得用戶輸入</span></pre>
+<p>．<span>Manipulating strings (a few ways)</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">處理字符串（幾種方法）</span></pre>
+<p><span>User input in Python</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">使用Python的用戶輸入<br/></span></pre>
+<p><span>To get user input in Python (3), the command you use is input(). Store the result in a variable, and use it to your heart’s content. Remember that the result you get from the user will be a string, even if they enter a number.</span></p>
+<p><span>For example,</span></p>
+<p><span>為了在Python（3）中獲得用戶輸入，您使用的命令是input（）。將結果存儲在變量中，並將其用於您的內心。請記住，即使用戶輸入數字，您從用戶那裡得到的結果也將是字符串。</span></p>
+<p><span> 例如，</span></p>
+<p><span>name = input("Give me your name: ")</span></p>
+<p><span>print("Your name is " + name)</span></p>
+<p><span>What this will print in the terminal (or the shell, whatever you are running Python in) </span></p>
+<p><span>will be:</span></p>
+<p><span>這將在終端（或外殼，無論您運行的是什麼Python）中顯示什麼 將會：</span></p>
+<p><span>&gt;&gt;&gt; Give me your name: Michele</span></p>
+<p><span>Your name is Michele</span></p>
+<p><span>What happens at the end of input() is that it waits for the user to type something and press ENTER. Only after the user presses ENTER does the program continue</span></p>
+<p><span>在input（）的末尾發生的事情是它等待用戶鍵入某些內容並按Enter。僅在用戶按下ENTER之後，程序才繼續</span></p>
+<p><span>Manipulating strings (a few ways)</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">處理字符串（幾種方法）<br/></span></pre>
+<p><span>What you get from the input() function is a string. What can you do with it?</span></p>
+<p><span> </span></p>
+<p><span>First: Make the string into a number. Let’s say you are 100% positive that the user entered a number. You can turn the string into an integer with the function int(). (In a later exercise or two or three there will be questions about what to do when the user does NOT enter a number and you try to do this; for now don’t worry about that problem). Here is what this looks like:</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">從input（）函數得到的是一個字符串。你能做什麼呢？
+
+第一：將字符串變成數字。假設您100％肯定用戶輸入了數字。您可以使用函數int（）將字符串轉換為整<br/>數。 （在以後的一兩三個練習中，當用戶不輸入數字而您嘗試這樣做時，將會出現關於如何處理的問題；<br/>現在不必擔心該問題）。看起來像這樣：<br/></span></pre>
+<p><span>age = input("Enter your age: ")</span></p>
+<p><span>age = int(age)</span></p>
+<p><span>(or, if you want to be more compact with your code)</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>（或者，如果您想使代碼更緊湊）</span></span></pre>
+<p><span>age = int(input("Enter your age: "))</span></p>
+<p><span>In both cases, age will hold a variable that is an integer, and now you can do math with it.</span></p>
+<p><span>(Note, you can also turn integers into strings exactly in the opposite way, using the str() function)</span></p>
+<p><span>Second: Do math with strings. What do I mean by that? I mean, if I want to combine (concatenate is the computer science word for this) strings, all I need to do is add them:</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">在這兩種情況下，age都將保留一個整數變量，現在您可以使用它進行數學運算。
+（請注意，您也可以使用str（）函數以相反的方式將整數轉換為字符串）
+第二：對字符串進行數學運算。那是什麼意思我的意思是，如果我想組合（連接起來就是計算機科學這個詞）<br/>字符串，我要做的就是添加它們：<br/></span></pre>
+<p><span>print("Were" + "wolf")</span></p>
+<p><span>print("Door" + "man")</span></p>
+<p><span>print("4" + "chan")</span></p>
+<p><span>print(str(4) + "chan")</span></p>
+<p><span>The same works for multiplication:</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">乘法的工作原理相同：</span></pre>
+<p><span>print(4 * "test")</span></p>
+<p><span>but division and subtraction do not work like this. In terms of multiplication, the idea of multiplyling two strings together is not well-defined. What does it mean to multiply two strings in the first place? However, it makes sense in a way to specify multiplying a string by a number - just repeat that string that number of times. Try this in your own program with all the arithmetic operations with numbers and strings - the best way to get a feel for what works and what doesn’t is to try it!</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">但是除法和減法不是這樣的。就乘法而言，將兩個字符串相乘的想法尚不明確。首先將兩個字符串相乘是什<br/>麼意思？但是，以某種方式指定將字符串乘以數字是有意義的-只需將該字符串重複該次數即可。在您自己<br/>的程序中嘗試使用帶有數字和字符串的所有算術運算，嘗試一下什麼可行，什麼無效的最佳方法！<br/></span></pre>
+<br />hw3 << <a href='hw3.html'>Previous</a> <a href='04 Divisors.html'>Next</a> >> 04 Divisors</div>
         
     <!-- footer -->
       <div class="container">
